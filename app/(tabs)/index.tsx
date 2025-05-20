@@ -4,6 +4,7 @@ import { Platform, StyleSheet } from 'react-native';
 import { HelloWave } from '@/components/HelloWave';
 import { LoginForm } from '@/components/LoginForm';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
+import { Saludar } from '@/components/Saludar';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
@@ -61,6 +62,10 @@ export default function HomeScreen() {
       </ThemedView>
 
       <LoginForm />
+      <ThemedText type='subtitle'>Curso de React Native</ThemedText>
+      <Saludar firtName='K8' />
+      <Saludar firtName='Andor' />
+      <Saludar firtName='Casian' lastName='de Taris' />
     </ParallaxScrollView>
   );
 }

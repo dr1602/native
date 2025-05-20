@@ -18,11 +18,13 @@ export default function HomeScreen() {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type='title'>Welcome!</ThemedText>
+        <ThemedText type='title' style={styles.specialTextColour}>
+          ¡Bienvenida o bienvenido!
+        </ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type='subtitle'>Step 1: Try it</ThemedText>
+        <ThemedText type='subtitle'>Paso 1: Pruébalo</ThemedText>
         <ThemedText>
           Edit{' '}
           <ThemedText type='defaultSemiBold'>app/(tabs)/index.tsx</ThemedText>{' '}
@@ -64,6 +66,7 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: '#61DAFB',
     gap: 8,
   },
   stepContainer: {
@@ -76,5 +79,8 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     position: 'absolute',
+  },
+  specialTextColour: {
+    color: '#282C34',
   },
 });

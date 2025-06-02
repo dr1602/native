@@ -1,4 +1,6 @@
+import { RootStackParamList } from '@/types/navigation';
 import { Button } from '@react-navigation/elements';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Image } from 'expo-image';
 import { useNavigation } from 'expo-router';
 import { StyleSheet } from 'react-native';
@@ -9,7 +11,8 @@ import { Saludar } from '@/components/Saludar';
 import { ThemedText } from '@/components/ThemedText';
 
 export const CoolHome = () => {
-  const navigation = useNavigation();
+  const navigation =
+    useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   return (
     <ParallaxScrollView

@@ -10,9 +10,8 @@ import Animated, {
 
 import { ThemedText } from '@/components/ThemedText';
 
-export function HelloWave(props: any) {
+export function HelloWave() {
   const rotationAnimation = useSharedValue(0);
-  const { navigation } = props;
 
   useEffect(() => {
     rotationAnimation.value = withRepeat(

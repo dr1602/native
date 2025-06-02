@@ -6,10 +6,7 @@ interface SaludarProps {
   lastName?: string;
 }
 
-export const Saludar: React.FC<SaludarProps> = ({
-  firtName = 'usuario',
-  lastName,
-}) => {
+export const Saludar = ({ firtName = 'usuario', lastName }: SaludarProps) => {
   return (
     <>
       <ThemedText>

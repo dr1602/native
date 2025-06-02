@@ -10,7 +10,7 @@ export const NavigationStack: React.FC = () => {
 
   return (
     <>
-      <Stack.Navigator initialRouteName='Saludo'>
+      <Stack.Navigator initialRouteName='Home'>
         <Stack.Screen
           name='Themed'
           component={ThemedText}
